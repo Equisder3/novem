@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../stylesmenu.css">
+    <link rel="stylesheet" href="../srylesgeneral.css">
+    <link rel="stylesheet" href="peliculas.css">
+    <style>
+        body{
+            background-image: url("../peliculas/wallpapersden.com_tetris-2023_3840x2160.jpg");
+            background-size: cover;
+        }
+    </style>
+</head>
+<body ondragstart="return false" onselectstart="return false" oncontextmenu="return false">
+    <div id="movie">
+        <iframe src="https://drive.google.com/file/d/1Ze4ZEv6-SmwnsbeEvdr0JyLj-htiP-4k/preview" allow="autoplay" allowfullscreen></iframe>
+    </div>
+    <header>
+        <div class="container">
+            <div class="btn-menu">
+                <label for="btn-menu">☰</label>
+            </div>
+                <div class="logo">
+                    <h1>NOVEM</h1>
+                </div>
+                <nav class="menu">
+                    <a href="#">Peliculas</a>
+                    <a href="#">Series</a>
+                    <a href="#">Categorias</a>
+                    <a href="#">Contacto</a>
+                </nav>
+            </div>
+    </header>
+    <section class="contenido">
+        <div class="info">
+            <div class="generos">
+                <a href="">Biografía</a>
+                <a href="">Drama</a>
+                <a href="">Historia</a>
+            </div>
+            <h1>Tetris</h1>
+            <div class="calificacion">
+                <img src="../IMDb-Logo.png" alt="">
+                <p>7.4</p>
+                <img class="productora" src="../1280px-Apple_TV_Plus_Logo.svg.png" alt="">
+            </div>
+            <div class="botonplay">
+                <button class="play" onclick="mostrarv();">
+                    <img src="../play-button-6.png" alt="">
+                </button>
+                <p>Watch Now</p>
+            </div>
+        </div>
+
+        <div class="extra">
+            <img class="hj1" src="posters/poster-tetris-2972860.webp" alt="">
+            <p class="hj2">Fecha de estreno</p>
+            <p class="hj3">Marzo 15, 2023</p>
+            <p class="hj4">Duración</p>
+            <p class="hj5">118 min</p>
+        </div>
+    </section>
+
+    <script>
+        function mostrarv(){
+            document.getElementById('movie').style.display = "block";
+        }
+    </script>
+</body>
+</html>

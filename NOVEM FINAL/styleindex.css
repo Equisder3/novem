@@ -1,0 +1,73 @@
+
+.recomendaciones{
+    z-index: 50;
+    position: absolute;
+    background-image: url("imagenes/Tetris.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.cover{
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, .4) 0%, rgba(0,0,0,1) 100%);
+}
+.logomv{
+    width: 650px;
+    filter: invert(1);
+    margin-bottom: 42px;
+}
+.plat{
+    color: #b9b9b9;
+}
+.rate{
+    color: #9CABD9;
+}
+.clasificacion{
+    display: flex;
+}
+.age{
+    color: white;
+}
+.contenido{
+    margin-left: 50px;
+    margin-top: 270px;
+}
+.contenido p{
+    padding-right: 15px;
+    font-size: 25px;
+    margin-bottom: 60px;
+}
+.playbtn{
+    padding: 18px 90px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    background-color: #2E56A6;
+    transition: all .3s;
+    font-size: 23px;
+}
+.playbtn:hover{
+    background-color: #1D3973;
+}
+.slider1{
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.slider1 h2{
+    color: white;
+}
+.estrenos{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr ); /*repite 7veces la cantidad de pixeles que pones, ese 1fr es el tamaño, es fraccion restante, lo divide todo el espacio entre 7, se puede mezclar tipos de unidades*/
+}
+.estrenos img{
+    border: solid 2px white;
+    border-radius: 15px;
+    width: 230px;
+    height: 340px;
+    object-fit: cover;
+}

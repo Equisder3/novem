@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://vjs.zencdn.net/7.15.4/video-js.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ruluko&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="../style carrousel.css">
+    <link rel="icon" href="../../N.png">
+    <title>Guardianes</title>
+    <style>
+        *,*:after, *::before{
+            font-family: 'Ruluko', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .salirv{
+            margin: 10px;
+            justify-content: flex-end;
+            position: absolute;
+            margin-left: 97%;
+            background: none;
+            border: none;
+            filter: invert(100);
+        }
+        .salirv img{
+            width: 32px;
+        }
+        .salirv:hover{
+            filter: invert(70%);
+        }
+        #perdida{
+            display: none;
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            z-index: 10000;
+        }
+        #perdida iframe{
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            position: absolute;
+            background-color: black;
+            height: 100%;
+            width: 100%;
+        }
+        #ver{
+            margin-top: 10px;
+            background-color: #2196F3;
+            border: none;
+            font-size: 23px;
+            color: white;
+            cursor: pointer;
+            width: 130px;
+            height: 48px;
+            border-radius: 7px;
+            transition: all .2s;
+            margin-right: 10px;
+        }
+        #ver:hover{
+            border: 3px solid #170779;
+        }
+    </style>
+</head>
+<body ondragstart="return false" onselectstart="return false" oncontextmenu="return false">
+    <div id="c_carga">
+        <div id="carga"></div>
+    </div>
+    <div id="perdida">
+        <iframe src="https://drive.google.com/file/d/1UqLNE9rHK7mA3vD6HpuXndlgoqsHXJ72/preview" allowfullscreen></iframe>
+        <button class="salirv" onclick="ocultarv();">
+        x
+        </button>
+    </div>
+    <script>
+        window.onload = function(){
+            var contenedor = document.getElementById('c_carga')
+
+            contenedor.style.visibility = 'hidden';
+            contenedor.style.opacity = '0';
+        }
+    </script>
+    <div class="peli">
+         <button id="ver" onclick="mostrarv();">
+            Ver ahora
+            <img class="iplay" src="../../play (1).svg"></img>
+        </button>
+         <button id="añadir" >
+            Añadir
+            <img class="ilist" src="../../list (1).svg"></img>
+        </button>
+    <script>
+        function ocultarv(){
+            document.getElementById('perdida').style.display = "none";
+        }
+        function mostrarv(){
+            document.getElementById('perdida').style.display = "block";
+        }
+    </script>
+</body>
+</html>
